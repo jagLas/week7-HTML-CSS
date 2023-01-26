@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <h1>My HTML Cheat Sheet</h1>
+
+        <h2>Headings</h2>
+        <p>
+            Headings from 'h1' to 'h6' identify blocks and sections. Every page must have one 'h1'.
+        </p>
+
+        <h2>Paragraphs</h2>
+        <p>
+            Paragraphs of text go in 'p' tags.
+        </p>
+
+        <h2>
+            Lists
+        </h2>
+
+        <h3>Unordered Lists</h3>
+
+        <p>
+            Unordered lists are marked with bullet points and go in 'ul' tags. Each list item goes in a 'li' tag.
+        </p>
+
+        <h4>Types of lists:</h4>
+        <ul>
+            <li>Unordered lists ('ul')</li>
+            <li>Ordered lists ('ol')</li>
+        </ul>
+
+        <h3>Ordered Lists</h3>
+
+        <p>
+            Ordered lists are numbered and go in 'ol' tags. Each list item goes in a 'li' tag.
+        </p>
+        <h4>Polya's Problem Solving Framework</h4>
+        <ol>
+            <li>Understand the problem</li>
+            <li>Come up with a plan</li>
+            <li>Carry out the plan</li>
+            <li>Go back and improve your solutions</li>
+        </ol>
+
+        <h2>Anchors (i.e. links)</h2>
+        <p>
+            Anchor tags create links to other pages. The URL goes in the 'hfref' attribute.
+            <a href="https://duckduckgo.com">
+                Go to DuckDuckGo to search for more information.
+            </a>
+        </p>
+
+        <p>
+            Settings 'target="_blank"' will open the link in a new window. See
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+                MDN
+            </a>
+            for more details.
+        </p>
+
+        <h2>Images</h2>
+
+        <p>
+            You can use the img tag to add images to your page.
+            <img src="http://wanderlord.com/wp-content/uploads/2015/11/Lemur-5-150x150.jpg" alt="A cute lemur">
+        </p>
+
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Insect</th>
+                    <th scope="col">Family</th>
+                    <th scope="col">Fact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ladybug</th>
+                    <td>Coccinellidae</td>
+                    <td>Can eat more than 5,000 insects!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fruit Flies</th>
+                    <td>Drosophilidae</td>
+                    <td>First living creatures in outer space!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Caterpillars</th>
+                    <td>Heterobathmiidae</td>
+                    <td>Have 12 eyes!</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>I had no idea!</td>
+                    <td>Those are neat!</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>
+            Tables are created using the 'table' tag. Tables have up to three parts, 'thead', 'tbody', and 'tfoot'.
+            Within each section use 'tr' tags to create rows.
+            Within those, use 'th scope="row or col"'' to make headers on in each space, or 'td' for data.
+        </p>
+
+        <h2>Article</h2>
+        <p>
+            'article' represents a self=contained composition in a document, which is intended to be independently distributable. i.e., forum post, newspaper article
+        </p>
+
+        <h2>Footer</h2>
+
+        <p>
+            'footer' Is used to make a footer for the nearest ancestor sectioning content or root element.
+        </p>
+
+        <h2>Header</h2>
+        <p>
+            'header' creates a header that is often used as a navigation aid or contain logos, search forms, etc.
+        </p>
+
+        <h2>nav</h2>
+        <p>
+            'nav' is used to provide navigation links
+        </p>
+
+        <h2>Forms</h2>
+
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
