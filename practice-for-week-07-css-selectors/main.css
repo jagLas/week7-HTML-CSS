@@ -8,6 +8,8 @@
 
 body > p {
     text-indent: 1em;
+    text-align: justify;
+    margin: .75em auto;
 }
 
 h1, h2, h3 {
@@ -44,6 +46,25 @@ table, .bk1, .figd {
 
 td {
     vertical-align: bottom;
+}
+
+pre {
+    width: fit-content;
+    margin: 100px auto;
+}
+
+
+:link {
+    text-decoration: none;
+}
+
+pre > :link {
+    color: black;
+}
+
+:link:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .td1 {
@@ -148,4 +169,14 @@ h3, .bk7 {
 
 .ad2 {
     margin-left: 50%;
+}
+
+.pagenum {
+    position: absolute;
+    right: 1%;
+    font-size: small;
+}
+
+#page-title {
+    font-weight: bold;
 }
