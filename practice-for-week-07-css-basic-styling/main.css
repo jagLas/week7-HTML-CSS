@@ -1,37 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
 h1 {
-    font-size: ;
-    font-family: ;
-    padding: ;
-    margin: ;
-    font-weight: ;
-    text-decoration: ;
-    color: ;
-    background-color: ;
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    padding: 8px 16px;
+    margin: 16px auto;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: maroon;
+    text-align: center;
 }
 
 h2 {
-    font-size: ;
-    font-family: ;
-    padding: ;
-    margin: ;
-    font-weight: ;
-    color: ;
-    background-color: ;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px;
+    margin: 16px auto;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: maroon;
+    background-color: white;
 }
 
 p {
-    font-family: ;
-    font-size: ;
-    padding: ;
-    margin: ;
-    color: ;
-    background-color: ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 16px 0px;
+    color: black;
+    background-color: white;
+}
+
+h2 + p {
+    margin-bottom: 16px;
+    margin-top: 0px
 }
 
 .logo {
     background-size: cover;
-    background-image: url();
-    background-color: ;
-    height: ;
-    width: ;
+    background-image: url('https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png');
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    margin: auto;
+}
+
+.page {
+    margin: 16px 25%;
+}
+
+.content {
+    margin: 16px;
 }
