@@ -97,3 +97,14 @@ footer {
 #topban h2 {
   text-align: center;
 }
+
+ul.clfooter {
+  text-align: center;
+  border-top: 1px solid #464646;
+  padding: 10px 0px;
+}
+
+ul.clfooter > li {
+  display: inline;
+  padding-right: 5px;
+}
