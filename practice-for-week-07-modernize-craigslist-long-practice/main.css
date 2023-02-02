@@ -108,3 +108,7 @@ ul.clfooter > li {
   display: inline;
   padding-right: 5px;
 }
+
+h4.ban::before{
+  content: '☮️';
+}
