@@ -32,6 +32,7 @@ p.more {
 
 /* Your code here */
 
+
 * {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   background-color: whitesmoke;
@@ -47,7 +48,7 @@ ul {
 }
 
 ul > li {
-  list-style: square;
+  list-style: none;
 }
 
 a:visited{
@@ -62,4 +63,37 @@ a:hover {
 a > span:hover {
   font-weight: bold;
   color: #800080;
+}
+
+footer {
+  clear: both;
+}
+
+.page-container {
+  max-width: 1200px;
+}
+
+#leftbar, #center, #rightbar {
+  float: left;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+#leftbar, #rightbar {
+  width: 25%;
+}
+
+#center {
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+#topban h2 {
+  text-align: center;
 }
