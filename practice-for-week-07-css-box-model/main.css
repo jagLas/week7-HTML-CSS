@@ -61,6 +61,9 @@ h1 {
     font-size: larger;
 
     /* Your code here */
+    width: fit-content;
+    margin: 10px auto;
+    padding: 40px;
 }
 
 .attribution {
@@ -68,4 +71,5 @@ h1 {
     font-style: italic;
 
     /* Your code here */
+    display: block;
 }
