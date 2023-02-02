@@ -1,9 +1,12 @@
 .box1 {
   background-color: blueviolet;
+  border: 5px solid blue;
 }
 
 .box2 {
   background-color: greenyellow;
+  border: 2px dotted red;
+  border-radius: 5px;
 }
 
 .text1 {
