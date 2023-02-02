@@ -1,3 +1,7 @@
+h2 {
+  opacity: .5;
+}
+
 .box1 {
   background-color: blueviolet;
   border: 5px solid blue;
@@ -20,15 +24,19 @@
 }
 
 .box3 {
-  background-color: lavender;
+  /* background-color: lavender;
+  opacity: .6; */
+  background-color: rgba(230, 230, 250, .6);
 }
 
 .box5 {
   background-color: lemonchiffon;
+  box-shadow: 2px 8px 15px teal;
 }
 
 .box6 {
   background-color: papayawhip;
+  box-shadow: 5px -10px #800000;
 }
 
 
