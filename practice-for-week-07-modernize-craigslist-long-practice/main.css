@@ -69,6 +69,39 @@ footer {
   clear: both;
 }
 
+td {
+  border: 1px solid #333;
+  text-align: center;
+}
+
+table.cal {
+  border-collapse: collapse;
+}
+
+td > a {
+  color: green;
+  font-weight: bold;
+}
+
+td.past {
+  opacity: .5;
+  color: black;
+}
+
+td.past:hover {
+  cursor: not-allowed;
+}
+
+td.today > a {
+  background-color: darkviolet;
+  color: white
+}
+
+td > a:hover {
+  background-color: lavender;
+  color: darkviolet;
+}
+
 .page-container {
   max-width: 1200px;
 }
