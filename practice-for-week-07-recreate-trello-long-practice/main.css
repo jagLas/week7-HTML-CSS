@@ -57,6 +57,138 @@ body {
   font-weight: normal;
 }
 
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d
+}
+
+@media screen and (min-width: 500px) {
+  .tabbed-nav__group {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group {
+    display: block;
+  }
+
+  .tabbed-nav__link {
+    display: block;
+  }
+  
+}
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.boards__sidebar {
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex: 1 1 220px;
+}
+
+.boards__sidebar-content .title, .boards__sidebar-content a {
+  color: white;
+}
+
+.boards__sidebar-content .description {
+  color: lightblue
+}
+
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: hotpink;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.boards__board.board-1 {
+  background-image: url(./board-backgrounds/board-1-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boards__board.board-2 {
+  background-image: url(./board-backgrounds/board-2-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boards__board.board-3 {
+  background-image: url(./board-backgrounds/board-3-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boards__board.board-4 {
+  background-image: url(./board-backgrounds/board-4-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+  }
+}
+
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
