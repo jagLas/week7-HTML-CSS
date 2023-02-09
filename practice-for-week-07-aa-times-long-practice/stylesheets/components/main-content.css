@@ -73,6 +73,11 @@ li {
     align-items: flex-start;
 }
 
+iframe {
+    background-color: black;
+    padding: 38px 0px;
+}
+
 .video-subtitle {
     font-size: 12px;
     padding: 10px 0px;
