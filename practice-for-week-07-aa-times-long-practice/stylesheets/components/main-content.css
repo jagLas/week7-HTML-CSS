@@ -22,11 +22,13 @@ main {
 }
 
 .article__big > h1 {
+    margin: auto;
     font-style: italic;
     font-size: 28px;
     font-weight: bold;
     padding: 10px 0px 20px;
     height: fit-content;
+    line-height: 32px;
 }
 
 .article__big .article__big-subtitle {
@@ -58,7 +60,7 @@ ul {
     margin-left: 1em;
 }
 
-li {
+main li {
     list-style: outside;
     line-height: 16px;
     padding: 5px 0px;
@@ -189,4 +191,19 @@ a.comments:visited {
 p {
     line-height: 16px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .right-area{
+        display: none;
+    }
+
+    .left-area {
+        border-right: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "left-area";
+    }
 }
