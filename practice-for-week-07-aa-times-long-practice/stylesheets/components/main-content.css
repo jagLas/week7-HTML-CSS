@@ -1,1 +1,33 @@
 /* Your code here */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "left-area right-area";
+}
+
+.left-area {
+    grid-area: left-area;
+    border-right: 1px solid #e2e2e2;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+
+.article__big {
+    display: grid;
+    grid-template-columns: 1fr fit-content;
+    grid-template-areas: "header header"
+        "text video";
+}
+
+.article__big-title {
+    grid-area: header;
+}
+
+.article__big-body {
+    grid-area: text;
+}
+
+.article__big-video {
+    grid-area: video;
+}
