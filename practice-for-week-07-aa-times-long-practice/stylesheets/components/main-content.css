@@ -72,6 +72,11 @@ li {
     align-items: flex-start;
 }
 
+.video-subtitle {
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
 .more-articles {
     display: flex;
     flex-direction: row;
@@ -97,11 +102,13 @@ a.comments:visited {
     border-right: 1px solid #e2e2e2;
 }
 
-.more-articles header {
+.article header{
     padding-left: 0px;
 }
 
-
+.mini-article {
+    padding: 10px;
+}
 
 p {
     line-height: 16px;
