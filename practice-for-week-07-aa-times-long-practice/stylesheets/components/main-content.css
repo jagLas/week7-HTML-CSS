@@ -10,15 +10,17 @@ main {
     grid-area: left-area;
     border-right: 1px solid #e2e2e2;
     margin-top: 10px;
-    padding-right: 15px;
 }
 
 .article__big {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 1fr;
     grid-template-areas: "header header"
         "text video";
-    padding: 0px 0px 50px;
+    padding: 0px 16px 50px 0px;
+    min-height: 350px;
+    box-sizing: border-box;
 }
 
 .article__big > h1 {
@@ -26,6 +28,7 @@ main {
     font-size: 28px;
     font-weight: bold;
     padding: 10px 0px 20px;
+    height: fit-content;
 }
 
 .article__big .article__big-subtitle {
@@ -82,6 +85,7 @@ li {
     flex-direction: row;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    min-height: 160px;
 }
 
 .article {
@@ -106,8 +110,28 @@ a.comments:visited {
     padding-left: 0px;
 }
 
+.mini-articles {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 12px;
+}
+
 .mini-article {
     padding: 10px;
+    width: fit-content;
+}
+
+.mini-article:nth-child(even) {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.mini-article > .article__author {
+    color: #999;
+}
+
+.mini-article > .article__title {
+    font-weight: bold;
 }
 
 p {
