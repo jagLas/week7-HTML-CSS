@@ -2,8 +2,7 @@
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "left-area right-area";
+    grid-template-areas: "left-area right-area";
 }
 
 .left-area {
@@ -16,10 +15,9 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: min-content 1fr;
-    grid-template-areas: "header header"
-        "text video";
+    grid-template-areas: "header header" "text video";
     padding: 0px 16px 50px 0px;
-    min-height: 350px;
+    min-height: 440px;
     box-sizing: border-box;
 }
 
@@ -40,7 +38,7 @@ main {
 
 .article__byline{
     color: #999;
-    font-size: 12px;
+    font-size: 11px;
     font-style: normal;
     font-weight: normal;
     padding: 5px 0px 5px;
@@ -89,9 +87,23 @@ li {
 }
 
 .article {
-    padding: 10px;
+    padding: 10px 0px;
+    margin-left: 10px;
+    border-bottom: 1px solid #e2e2e2;
 }
 
+.right-area .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min-content;
+    gap: 15px;
+}
+
+.article__header {
+    flex-basis: min-content;
+    margin: 0px;
+}
 a.comments:link {
     color: #0051ff;
     font-size: 10px;
@@ -110,27 +122,62 @@ a.comments:visited {
     padding-left: 0px;
 }
 
-.mini-articles {
-    display: flex;
-    flex-flow: column nowrap;
+.section-name__big{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    height: fit-content;
+}
+
+.section-name__small {
     font-size: 12px;
+    text-transform: uppercase;
+}
+
+.article__title {
+    font-weight: bold;
+}
+
+.article__image {
+    height: 100px;
+    object-fit: cover;
+}
+
+.mini-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    margin-left: 10px;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .mini-article {
-    padding: 10px;
-    width: fit-content;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0px;
 }
 
-.mini-article:nth-child(even) {
-    font-weight: bold;
-    align-self: flex-end;
+.mini-right {
+    padding-top: 16px;
+    border-left: 1px solid #e2e2e2;
 }
 
-.mini-article > .article__author {
+.mini-left > .mini-article {
+    margin-right: 5px;
+}
+
+.mini-right > .mini-article {
+    margin-left: 5px;
+}
+
+.mini-article:last-child {
+    border-bottom: none;
+}
+
+.mini-article .article__author {
     color: #999;
 }
 
-.mini-article > .article__title {
+.mini-article .article__title {
     font-weight: bold;
 }
 
