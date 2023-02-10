@@ -69,3 +69,19 @@
         width: 168px;
     }
 }
+
+@media print {
+    .photo-card {
+        text-align: left;
+        break-inside: avoid;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .photo-card img {
+        margin-right: 1rem;
+        width: 168px;
+    }
+}
