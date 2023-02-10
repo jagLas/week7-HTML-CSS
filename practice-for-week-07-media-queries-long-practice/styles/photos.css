@@ -24,3 +24,48 @@
 }
 
 /* Your code here */
+
+/* @media screen and (max-width: 480px) {
+
+} */
+
+@media screen and (min-width: 680px) and (max-width: 799px) {
+    .photo-card {
+        text-align: left;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .photo-card img {
+        margin-right: 1rem;
+        width: 168px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .photo-card {
+        display: inline-flex;
+        flex-direction: column;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .photo-card {
+        text-align: left;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .photo-card img {
+        margin-right: 1rem;
+        width: 168px;
+    }
+}
