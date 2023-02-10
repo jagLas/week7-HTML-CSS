@@ -52,6 +52,14 @@ nav a.selected {
     cursor: default;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Your code here */
 
 @media print {
@@ -65,4 +73,11 @@ nav a.selected {
         height: 220px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    a {
+        color: #0000EE;
+        text-decoration: underline;
+    }
 }
