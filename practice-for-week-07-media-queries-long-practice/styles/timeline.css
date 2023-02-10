@@ -85,3 +85,13 @@
 }
 
 /* Your code here */
+@media print {
+    .timeline {
+        min-width: unset;
+    }
+    
+    .timeline-labels{
+        min-width: unset;
+        font-size: .75em;
+    }
+}
