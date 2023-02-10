@@ -112,7 +112,22 @@ header {
         filter: none;
     }
 
-    header, div:not(.story-box, .page, .content) {
+    .page {
+        padding: 0px;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .image-box {
+        position: absolute;
+        right: 56px;
+        top: 32px;
+        width: 64px;
+        height: auto;
+    }
+
+    header {
         display: none;
     }
 }
