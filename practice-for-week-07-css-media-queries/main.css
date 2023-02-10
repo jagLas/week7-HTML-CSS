@@ -105,3 +105,14 @@ header {
 /* Phase 2 */
 
 /* Your code here */
+
+@media print {
+    .story-box {
+        background-color: white;
+        filter: none;
+    }
+
+    header, div:not(.story-box, .page, .content) {
+        display: none;
+    }
+}
