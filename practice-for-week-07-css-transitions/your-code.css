@@ -5,9 +5,13 @@
     width: auto;
     margin-left: 300px;
     /* Your code here */
+    transition-property: transform;
+    transition-duration: 2s;
 }
 
-/* Create rocket hover animation here
+.rocket_svg:hover {
+    transform: rotate(250deg);
+}
 
 
 /* ===== Problem 2 ===== */
