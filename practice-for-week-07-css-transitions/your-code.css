@@ -36,9 +36,15 @@
     height: 200px;
     width: auto;
     margin-left: 300px;
-    /* Your animation here
+    animation: 3s linear 0s infinite normal running spin;
 }
 
 @keyframes spin {
-    /* Set up your keyframe animation here
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
