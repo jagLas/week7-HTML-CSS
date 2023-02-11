@@ -21,9 +21,14 @@
     width: auto;
     margin-left: 200px;
     /* Your code here */
+    transition-property: transform;
+    transition-duration: 2s;
+
 }
 
-/* Create astronaut hover animation here
+.astronaut_svg:hover {
+    transform: translate(100px);
+}
 
 /* ======= BONUS ======= */
 
