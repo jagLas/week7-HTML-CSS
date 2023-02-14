@@ -1,6 +1,7 @@
 @import url(./stylesheets/reset.css);
 @import url(./stylesheets/global.css);
 
+@import url(./stylesheets/main-info.css);
 @import url(./stylesheets/nav.css);
 @import url(./stylesheets/endorsements.css);
 
