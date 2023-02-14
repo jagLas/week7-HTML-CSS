@@ -17,4 +17,17 @@ body * {
 
 a {
     text-decoration: none;
+    color: unset;
+}
+
+.btn {
+    border: 1px solid black;
+    text-align: center;
+    width: fit-content;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
 }
