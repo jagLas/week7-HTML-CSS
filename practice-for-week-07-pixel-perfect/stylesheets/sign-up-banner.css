@@ -44,7 +44,7 @@
 }
 
 #cloud1 {
-    top: 12px;
+    top: 24px;
     right: 12px;
 }
 
@@ -57,14 +57,14 @@
     width: 230px;
     position: absolute;
     left: 12px;
-    top: 12px;
+    top: 24px;
     margin: 0px;
 }
 
 #dino2 {
     width: 230px;
     position: absolute;
-    bottom: 0px;
+    bottom: -5px;
     right: 20px;
     margin: 0px;
 }
