@@ -22,7 +22,7 @@
 }
 
 .sign-up-banner p {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 20px;
     height: 39px;
     vertical-align: middle;
@@ -34,6 +34,12 @@
     padding: 12px 64px;
     margin-top: -8px;
     margin-bottom: 0px;
+}
+
+.sign-up-banner .btn:hover {
+    background-color: #2be778;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 .cloud {
