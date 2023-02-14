@@ -1,12 +1,18 @@
 html {
     color: #3a3a3a;
+    letter-spacing: 1px;
 }
 
 body {
-    max-width: 1200px;
-    margin: auto;
+
+
     font-size: 118%;
     font-family: 'National', 'Helvetica', 'Arial', sans-serif;
+}
+
+body * {
+    max-width: 1200px;
+    margin: auto;
 }
 
 a {

@@ -36,12 +36,13 @@
     text-align: justify;
     max-width: 38rem;
     line-height: 1.8em;
+    letter-spacing: normal;
 }
 
 .feature-card {
     display: flex;
     justify-content: space-between;
-    padding-right: 32px
+    padding-right: 32px;
 }
 
 .feature-text {
@@ -50,8 +51,17 @@
     line-height: 1.5em;
 }
 
+.feature-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
 .feature-card img {
     width: 52px;
+    margin: 0px;
 }
 
 .additional-info > ul {
@@ -63,6 +73,13 @@
 
 .feature-text__header {
     font-weight: bold;
-    font-size: 1.05em;
+    font-size: 1.15em;
+    line-height: 1.5em;
     margin-bottom: 8px;
+    max-width: 221px;
+    overflow-wrap: break-word;
+}
+
+.feature-text__description {
+    letter-spacing: normal;
 }

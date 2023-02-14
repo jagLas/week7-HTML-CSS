@@ -7,7 +7,12 @@ h1 {
 .main-info {
     display: flex;
     align-items: center;
-    margin: 120px 0px;
+    margin: 120px auto;
+}
+
+.main-info a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .main-info__left {
