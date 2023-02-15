@@ -3,12 +3,19 @@
     position: relative;
     text-transform: uppercase;
     font-size: .94rem;
+    /* display: flex; */
+}
+
+.menu {
+    display: none;
+    position: absolute;
 }
 
 .nav__logo {
     width: 100px;
     margin-right: 70px;
     margin-top: 20px;
+    display: inline-block;
 }
 
 .nav__middle {
@@ -53,4 +60,30 @@
 
 .nav__middle a:hover {
     color: #e66760;
+}
+
+@media screen and (max-width: 920px) {
+    .btn.sign-up {
+        display: none;
+    }
+
+    .nav > a {
+        margin: 0px auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .nav__middle {
+        display: none;
+    }
+
+    .nav__right {
+        right: 33px;
+    }
+
+    .menu {
+        display: block;
+        left: 16px;
+        top: 33px;
+    }
 }
