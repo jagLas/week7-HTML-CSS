@@ -106,3 +106,41 @@
     gap: 7px;
     color: #908a99;
 }
+
+@media screen and (max-width: 920px) {
+    .footer {
+        text-align: center;
+    }
+
+    .col-links > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        padding: 0px 16px;
+        /* width: unset; */
+    }
+
+    .col-header {
+        padding: 8px 0px;
+    }
+    
+    .nav-link {
+        padding: 8px 0px;
+    }
+
+    .col-nav {
+        padding: 0px;
+        align-items: center;
+    }
+
+    .col-links * {
+        width: fit-content;
+    }
+
+    .col-nav > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
