@@ -82,3 +82,17 @@
     margin: 0px;
     z-index: 1;
 }
+
+@media screen and (max-width: 920px) {
+    .cloud {
+        display: none;
+    }
+
+    #dino1, #dino2 {
+        display: none;
+    }
+
+    .sign-up-banner > .container {
+        padding: 56px 16px;
+    }
+}
