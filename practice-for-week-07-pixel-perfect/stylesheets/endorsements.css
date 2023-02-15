@@ -10,10 +10,23 @@
 .endorsement__logos {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .endorsement > h2 {
     font-size: 30px;
     margin-bottom: 32px;
     text-align: center;
+}
+
+@media screen and (max-width: 920px) {
+
+    .endorsement {
+        padding: 0px 16px 112px;
+    }
+
+    .endorsement__logos {
+        justify-content: center;
+        gap: 16px
+    }
 }
