@@ -50,3 +50,25 @@
 .testimonial-author #author {
     font-weight: bold;
 }
+
+@media screen and (max-width: 920px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .testimonial * {
+        padding: 0px;
+        border: none;
+        text-align: center;
+    }
+
+    .testimonial-author {
+        align-items: center;
+    }
+
+    .testimonial-text {
+        width: 80%;
+    }
+}
