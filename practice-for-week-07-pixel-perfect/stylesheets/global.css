@@ -10,7 +10,7 @@ body {
     font-family: 'National', 'Helvetica', 'Arial', sans-serif;
 }
 
-body * {
+body > * {
     max-width: 1200px;
     margin: auto;
 }
