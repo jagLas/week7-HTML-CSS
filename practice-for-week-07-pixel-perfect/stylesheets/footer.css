@@ -173,4 +173,13 @@
     .row-header {
         padding: 8px 0px;
     }
+
+    .sub-footer {
+        padding: 36px 16px 0px;
+        margin-top: 36px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 32px;
+    }
 }
