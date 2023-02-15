@@ -27,7 +27,8 @@
 }
 
 .additional-info > img {
-    width: 480px;
+    max-width: 480px;
+    width: 80%;
 }
 
 .additional-info > p {
@@ -82,4 +83,29 @@
 
 .feature-text__description {
     letter-spacing: normal;
+}
+
+@media screen and (max-width: 920px) {
+    .additional-info {
+        padding: 74.6px 16px;
+    }
+
+    .additional-info > ul {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .feature-card {
+        padding: 0px;
+        justify-content: flex-start;
+    }
+
+    .feature-text {
+        padding-bottom: 16px;
+        max-width: 90%;
+    }
+
+    .feature-text__header {
+        max-width: fit-content;
+    }
 }
